@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+}
+
+header {
+    background-color: #00bfa5;
+    /* controllare altezza */
+    height: 7vh;
+}
+
+main {
+    background-color: #d4dbd9;
+    /* Controllare altezza */
+    height: 90vh;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ /* Sono Tutti livelli dell'header */
+.sub_header {
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top:10%;
+    right: 10%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub_header_left {
+    width: 40%;
+    height: 100%;
+    background-color: #d4dbd9;
+    border-right: 1px solid lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.avatar img{
+    width: 70px;
+}
+
+.sub_header_right {
+    width: 60%;
+    height: 100%;
+    background-color: #d4dbd9;
+    border-right: 1px solid lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.ultimo_accesso h5 {
+    color: grey
+}
+
+.avatar2 {
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar2 img{
+    float: left;
+    width: 65px;
+    margin-left: 10px;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-right: 10px;
+
+}
+
+.icons i {
+    margin-right: 20px;
+    font-size: 25px;
+    color: grey;
+}
+
+/* Sono tutti livelli del main */
+
+.aside {
+    width: 80%;
+    position: absolute;
+    top:19%;
+    right: 10%;
+    /* Controllare altezza */
+    height: calc(100vh - 200px);
+    background-color: #e5ddd5;
+
+}
+
+.aside_left{
+    width: 40%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.aside_left_top{
+    background-color: white;
+    font-size: 20px;
+}
+
+
+
+.notify{
+    height: 10vh;
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notify i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.4;
+}
+
+.notify h5 {
+    color: grey;
+
+}
+
+.search {
+    height: 50px;
+    background-color: #d4dbd9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search i {
+    margin-right: 5px;
+    font-size: 25px;
+    color: grey;
+}
+.search input{
+    width:85%;
+    padding: 5px;
+
+}
+
+/* Colonna con numeri e contatti */
+.aside_left{
+    float: left;
+    width: 40%;
+
+}
+.aside_left_bottom {
+    background-color: white;
+    height: calc(100vh - 320px);
+    overflow: auto;
+}
+
+.aside_left_bottom h5{
+    color: lightgrey;
+}
+
+
+.contact {
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+
+}
+
+.contact img{
+    float: left;
+    width: 65px;
+    margin: 10px;
+
+}
+
+.aside_right {
+    float: left;
+    width: 60%;
+    background-color: #e5ddd5;
+    overflow: scroll;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+.aside_right_top {
+    height: calc(100vh - 250px);
+    overflow: auto;
+
+}
+
+/* .aside_right_top div {
+    background-color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+
+} */
+
+.aside_left_top .message {
+    display: none;
+
+}
+.messageXX{
+    display: none;
+}
+
+.message-text {
+    word-break: break-all;
+}
+
+
+
+.message-bottom {
+    text-align:right;
+
+}
+
+.sent {
+    display: block;
+    background-color: lightgreen;
+    float: right;
+    clear: both;
+    max-width: 20%;
+    min-width: 30%;
+    border-radius: 5px;
+    padding:10px;
+    margin: 15px;
+
+}
+
+.received {
+    display: block;
+    background-color: white;
+    float: left;
+    clear: both;
+    max-width: 20%;
+    min-width: 30%;
+    border-radius: 5px;
+    padding:10px;
+    margin: 15px;
+}
+
+/* .aside_right_top div:first-child{
+    margin-top: 40px;
+}
+
+.aside_right_top div:last-child{
+    margin-top: 120px;
+    background-color: lightgreen;
+} */
+
+.first_message {
+    background-color: white;
+}
+
+.aside_right_bottom {
+    height: 50px;
+    background-color: #d4dbd9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside_right_bottom i {
+    font-size: 30px;
+    color: grey;
+}
+
+.aside_right_bottom input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+}
